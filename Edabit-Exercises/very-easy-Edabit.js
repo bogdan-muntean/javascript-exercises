@@ -41,16 +41,14 @@
 // 5.Sum of Polygon Angles
 // Given an n-sided regular polygon n, return the total sum of internal angles (in degrees).
 
-let numberOfSides = 6;
+// let numberOfSides = 6;
 
-function sumOfPolygonAngles( sides ) {
-    return (sides - 2) * 180;
-}
-console.log(sumOfPolygonAngles( numberOfSides ))
-
-
-
+// function sumOfPolygonAngles( sides ) {
+//     return (sides - 2) * 180;
+// }
+// console.log(sumOfPolygonAngles( numberOfSides ))
 //  ----------------------------------------------------
+6.
 
 //  ----------------------------------------------------
 
