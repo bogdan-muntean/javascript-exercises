@@ -15,6 +15,17 @@
 // console.log("Bitwise OR = " + bitwiseOR(7, 12))
 // console.log("Bitwise XOR = " + bitwiseXOR(7, 12))
 //  -----------------------------------------
+// 2.Add up the Numbers from a Single Number
+
+let var1 = 4;
+
+function (number){
+    for( let i = 1; i <= number; i++){
+        
+    }
+}
+
+
 //  -----------------------------------------
 //  -----------------------------------------
 //  -----------------------------------------

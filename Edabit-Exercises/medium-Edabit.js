@@ -11,18 +11,21 @@
 
 //   ----------------------------------------
 // 2.A Redundant Function
-function redundant( string ){
-    const secondFunc = () => {
-        return string
-    }
-    return secondFunc
-}
-const f1 = redundant("test")
-f1()
-// redundant("sdsd")
 
+// function redundant (string){
+//     return function () {
+//         let result = `"${string}"`;
+//         return result;
+//     }
+// }
+
+// const f3 = redundant("qqq")
+// console.log(f3())
 
 //   ----------------------------------------
+
+
+
 //   ----------------------------------------
 //   ----------------------------------------
 //   ----------------------------------------
