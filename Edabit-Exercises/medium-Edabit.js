@@ -10,7 +10,17 @@
 // console.log(countTrue(array));
 
 //   ----------------------------------------
-2.
+// 2.A Redundant Function
+function redundant( string ){
+    const secondFunc = () => {
+        return string
+    }
+    return secondFunc
+}
+const f1 = redundant("test")
+f1()
+// redundant("sdsd")
+
 
 //   ----------------------------------------
 //   ----------------------------------------
