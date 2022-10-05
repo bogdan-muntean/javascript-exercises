@@ -17,16 +17,20 @@
 //  -----------------------------------------
 // 2.Add up the Numbers from a Single Number
 
-let var1 = 4;
+// let var1 = 4;
 
-function (number){
-    for( let i = 1; i <= number; i++){
-        
-    }
-}
-
+// function sumOfNumbers (number){
+//     let sum = 0;
+//     for( let i = 1; i <= number; i++){
+//         sum += i;
+//     }
+//     return sum
+// }
+// console.log(sumOfNumbers(var1))
 
 //  -----------------------------------------
+3.
+
 //  -----------------------------------------
 //  -----------------------------------------
 //  -----------------------------------------
