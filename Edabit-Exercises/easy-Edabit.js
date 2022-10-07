@@ -70,9 +70,9 @@ let power = prompt("Enter the power of two: ");
 
 function shiftToLeft(x, y){
     if(y === 1)
-        return 2;
+        return x * 2;
     else if(y === 0)
-        return 1
+        return x * 1;
     console.log(y)
     return x * shiftToLeft(2, y-1);
 }
