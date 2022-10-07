@@ -106,6 +106,20 @@
 // console.log(`Minim = ${min} and Maximum = ${max}`)
 
 //  -----------------------------------------
+// 6.Is it Time for Milk and Cookies?
+const readline = require("prompt-sync");
+const prompt = readline()
+let year = prompt("Introduce the year: ")
+let month = prompt("Introduce the month: ")
+let day = prompt("Introduce the day: ")
+
+function timeForMilkAndCookies(date) {
+	if( (month === 12) && (day === 24) ){
+        return true;
+    } else 
+        return false;
+}
+timeForMilkAndCookies(new Date(year, month, day))
 //  -----------------------------------------
 //  -----------------------------------------
 //  -----------------------------------------
