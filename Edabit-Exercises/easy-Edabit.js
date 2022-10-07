@@ -29,7 +29,36 @@
 // console.log(sumOfNumbers(var1))
 
 //  -----------------------------------------
-3.
+// 3. Matchstick Houses
+//input from terminal
+const readline = require("prompt-sync");
+const prompt = readline()
+let input = prompt("Enter the value: ");
+console.log(`Your value is ${input} and has this result: ${matchStick(input)}`)
+
+let test1 = 0;
+let test2 = 4;
+let test3 = 25;
+let test4 = 81;
+
+
+function matchStick( number ){
+    let sticks = 0;
+    if (number === 0) return 0;
+    for( let i = 1; i <= number; i++ ){
+        if( i == 1 ){ 
+            sticks += 6; 
+        } else if ( i != 1 ){
+            sticks += 5;
+        }
+        // console.log(sticks)
+    }
+    return sticks;
+}
+
+// console.log( matchStick(test1))
+// console.log( matchStick(test2))
+// console.log( matchStick(test3))
 
 //  -----------------------------------------
 //  -----------------------------------------
