@@ -62,23 +62,49 @@
 
 //  -----------------------------------------
 // 4. Left Shift by Powers of Two 
-const readline = require("prompt-sync");
-const prompt = readline()
+// const readline = require("prompt-sync");
+// const prompt = readline()
 
-let number = prompt("Enter the number: ");
-let power = prompt("Enter the power of two: ");
+// let number = prompt("Enter the number: ");
+// let power = prompt("Enter the power of two: ");
 
-function shiftToLeft(x, y){
-    if(y === 1)
-        return x * 2;
-    else if(y === 0)
-        return x * 1;
-    console.log(y)
-    return x * shiftToLeft(2, y-1);
-}
-console.log(`Your result is: ${shiftToLeft(number, power)}`);
+// while(power < 0){
+//     power = prompt("Power of two need to be a positive number: ");
+// }
+
+// function shiftToLeft(x, y){
+//     if(y === 1)
+//         return x * 2;
+//     else if(y === 0)
+//         return x * 1;
+//     console.log(y)
+//     return x * shiftToLeft(2, y-1);
+// }
+// console.log(`Your result is: ${shiftToLeft(number, power)}`);
 
 //  -----------------------------------------
+// 5. Find the Smallest and Biggest Numbers
+
+// const readline = require("prompt-sync");
+// const prompt = readline()
+
+// let input = prompt("Introduce an array of numbers and keep a space between them: ");
+// let array = input.split(" ");
+// console.log(`Array is: ${array} `)
+
+// let min = array[1]
+// let max = array[1]
+// function minMax(arr){
+//     arr.forEach(element => {
+//         if(element < min)
+//             min = element
+//         if(element > max)
+//             max = element
+//     });
+// }
+// minMax(array)
+// console.log(`Minim = ${min} and Maximum = ${max}`)
+
 //  -----------------------------------------
 //  -----------------------------------------
 //  -----------------------------------------
