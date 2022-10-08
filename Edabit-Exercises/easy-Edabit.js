@@ -107,19 +107,23 @@
 
 //  -----------------------------------------
 // 6.Is it Time for Milk and Cookies?
-const readline = require("prompt-sync");
-const prompt = readline()
-let year = prompt("Introduce the year: ")
-let month = prompt("Introduce the month: ")
-let day = prompt("Introduce the day: ")
+// const readline = require("prompt-sync");
+// const prompt = readline()
+// let year = prompt("Introduce the year: ")
+// let month = prompt("Introduce the month: ")
+// let day = prompt("Introduce the day: ")
 
-function timeForMilkAndCookies(date) {
-	if( (month === 12) && (day === 24) ){
-        return true;
-    } else 
-        return false;
-}
-timeForMilkAndCookies(new Date(year, month, day))
+// function timeForMilkAndCookies(myDate) {
+// 	if( (myDate.getMonth()+1 === 12) && (myDate.getDate() === 24) ){
+//         return true;
+//     } else 
+//         return false;
+// }
+// console.log(timeForMilkAndCookies(new Date(year, month, day)))
+
+// if ((myDate.getDate() != day) || 
+//     (myDate.getMonth() != month - 1) || 
+//     (myDate.getFullYear() != year))
 //  -----------------------------------------
 //  -----------------------------------------
 //  -----------------------------------------
