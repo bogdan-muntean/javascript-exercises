@@ -1,4 +1,4 @@
-1.Bitwise Operations
+1. Bitwise Operations
 
 A decimal number can be represented as a sequence of bits. To illustrate:
 6 = 00000110
@@ -29,7 +29,7 @@ let binarToInt = parseInt(binarCode) - transforma inapoi in integer
 !! console.log(("110010").toString(10)) - integer (decimal)
 !! console.log(("110010").toString(16)) - hexadecimal
   -----------------------------------------
-2.Add up the Numbers from a Single Number
+2. Add up the Numbers from a Single Number
 
 Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
 Examples
@@ -61,7 +61,7 @@ Notes
     Think of the input (step) as the total number of houses that have been connected together.
 
   -----------------------------------------
-  4. Left Shift by Powers of Two 
+4. Left Shift by Powers of Two 
 The left shift operation is similar to multiplication by powers of two.
 Sample calculation using the left shift operator (<<):
 10 << 3 = 10 * 2^3 = 10 * 8 = 80
@@ -83,7 +83,7 @@ Notes
     Alternatively, you can solve this challenge via recursion.
     A recursive version of this challenge can be found via this link.
   -----------------------------------------
-5.Find the Smallest and Biggest Numbers
+5. Find the Smallest and Biggest Numbers
 
 Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
 
@@ -94,7 +94,7 @@ minMax([1]) ➞ [1, 1]
 Notes
 All test arrays will have at least one element and are valid.
   -----------------------------------------
-6.Is it Time for Milk and Cookies?
+6. Is it Time for Milk and Cookies?
 
 Christmas Eve is almost upon us, so naturally we need to prepare some milk and cookies for Santa! Create a function that accepts a Date object and returns true if it's Christmas Eve (December 24th) and false otherwise. Keep in mind JavaScript's Date month is 0 based, meaning December is the 11th month while January is 0.
 
@@ -107,6 +107,20 @@ Notes
     Dates are zero zero based (see resources).
     All test cases contain valid dates.
   -----------------------------------------
+7. Which Function Returns the Larger Number?
+
+Your function will be passed two functions, f and g, that don't take any parameters. Your function has to call them, and return a string which indicates which function returned the larger number.
+    If f returns the larger number, return the string f.
+    If g returns the larger number, return the string g.
+    If the functions return the same number, return the string neither.
+
+Examples
+whichIsLarger(() => 5, () => 10) ➞ "g"
+whichIsLarger(() => 25,  () => 25) ➞ "neither"
+whichIsLarger(() => 505050, () => 5050) ➞ "f"
+
+Notes
+This exercise is designed as an introduction to higher order functions (functions which use other functions to do their work).
   -----------------------------------------
   -----------------------------------------
   -----------------------------------------

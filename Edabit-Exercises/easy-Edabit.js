@@ -14,6 +14,7 @@
 // console.log("Bitwise AND = " + bitwiseAND(7, 12))
 // console.log("Bitwise OR = " + bitwiseOR(7, 12))
 // console.log("Bitwise XOR = " + bitwiseXOR(7, 12))
+
 //  -----------------------------------------
 // 2.Add up the Numbers from a Single Number
 
@@ -124,7 +125,24 @@
 // if ((myDate.getDate() != day) || 
 //     (myDate.getMonth() != month - 1) || 
 //     (myDate.getFullYear() != year))
+
 //  -----------------------------------------
+// 7. Which Function Returns the Larger Number?
+
+function whichIsLarger(f, g){
+    if(f < g) {
+        return "g";
+    } else if(f > g) {
+        return "f";
+    } else {
+        return "neither";
+    }
+};
+
+console.log(whichIsLarger(() => 5, () => 10));
+console.log(whichIsLarger(() => 50505050, () => 5050));
+console.log(whichIsLarger(() => 25, () => 25));
+
 //  -----------------------------------------
 //  -----------------------------------------
 //  -----------------------------------------
