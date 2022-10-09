@@ -129,20 +129,42 @@
 //  -----------------------------------------
 // 7. Which Function Returns the Larger Number?
 
-function whichIsLarger(f, g){
-    if(f < g) {
-        return "g";
-    } else if(f > g) {
-        return "f";
-    } else {
-        return "neither";
-    }
-};
+// function whichIsLarger(f, g){
+//     if(f < g) {
+//         return "g";
+//     } else if(f > g) {
+//         return "f";
+//     } else {
+//         return "neither";
+//     }
+// };
 
-console.log(whichIsLarger(() => 5, () => 10));
-console.log(whichIsLarger(() => 50505050, () => 5050));
-console.log(whichIsLarger(() => 25, () => 25));
+// console.log(whichIsLarger(() => 5, () => 10));
+// console.log(whichIsLarger(() => 50505050, () => 5050));
+// console.log(whichIsLarger(() => 25, () => 25));
 
 //  -----------------------------------------
+// 8. Convert a Number to Base-2
+
+function binar(numar) {
+	let rezultat = "";
+	if (numar == 0) {
+		rezultat = "0";
+	}
+	while (numar > 0) {
+			rezultat += numar % 2;
+            console.log("rezultat: ", rezultat)
+			numar = Math.floor(numar/2);
+            console.log("numar: ",numar)
+		};
+	return rezultat.split("").reverse().join("");
+}
+
+console.log(binar(1))
+console.log(binar(5))
+binar(10)
+
+
+
 //  -----------------------------------------
 //  -----------------------------------------
