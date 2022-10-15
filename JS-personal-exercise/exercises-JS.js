@@ -22,18 +22,42 @@
 // Notes
 // Make sure to return an array.
 
-function fizzBuzz(number){
-    for(let i = 1; i < number; i++){
-        if(i % 15 == 0){
-            console.log("FizzBuzz")
-        } else if(i % 3 == 0){
-            console.log("Fizz")
-        } else if(i % 5 == 0){
-            console.log("Buzz")
-        } else{
-            console.log(i)
-        }
-    }
-}
-fizzBuzz(10)
-fizzBuzz(15)
+// function fizzBuzz(number){
+//     for(let i = 1; i < number; i++){
+//         if(i % 15 == 0){
+//             console.log("FizzBuzz")
+//         } else if(i % 3 == 0){
+//             console.log("Fizz")
+//         } else if(i % 5 == 0){
+//             console.log("Buzz")
+//         } else{
+//             console.log(i)
+//         }
+//     }
+// }
+// fizzBuzz(10)
+// fizzBuzz(15)
+
+//4. Ca si la 3. dar sa scrie par sau impar in functie de ce numar ii
+
+// function parImpar(number){
+//     let result = [];
+//     for(let i = 0; i < number; i++){
+//         if(i % 2 == 0){
+//             // console.log("par");
+//             result.push("par")
+//         } else {
+//             // console.log("impar");
+//             result.push("impar")
+//         } 
+//     }
+//     return result
+// }
+
+// console.log(parImpar(10))
+
+//5.Sorteaza in ordinea lungimii stringurilor 
+
+const arrayOfCompanies = ["Luxoft","MutualMass" ,"Microsoft" ,"Brainest"]
+
+console.log(arrayOfCompanies.sort((a, b) => a.length - b.length))
