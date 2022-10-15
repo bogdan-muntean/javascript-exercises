@@ -8,7 +8,7 @@
 
 // ###################################################
 // 2. RegEx Exercise 2: Find HTML Tags
-const REGEXP = /\s<\w+.>\s/g
+const REGEXP = /<[^>]+>/g
 
 let str = '<> <a href="/"> <input type="radio" checked> <b>'
 const result = str.match(REGEXP)
