@@ -45,6 +45,19 @@ let str = "\<html><body style="height: 200px"> ... </body></html>"
 str = str.replace(REGEXP, `<h1>Hello</h1>`)
 console.log(str) ➞ <html> <body style="height: 200px"><h1>Hello</h1> ... </body> </html>
 # ##################################################
+5. RegEx Exercise 5: Password Validation
+
+Create a regular expression that checks for a password:
+    It should contain at least one uppercase letter.
+    It should contain at least one lowercase letter.
+    It should contain at least one digit.
+    It should contain at least one special symbol.
+
+REGEXP.test("bbA234c@cy~!")  ➞ true
+REGEXP.test("32Bl4###xxz") ➞ true
+REGEXP.test("!abcABC9lzD") ➞ true
+REGEXP.test("d@!2?%^&ahaZbb") ➞ true
+
 # ##################################################
 # ##################################################
 # ##################################################
