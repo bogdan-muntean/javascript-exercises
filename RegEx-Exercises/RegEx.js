@@ -18,10 +18,19 @@
 // ###################################################
 // 3.RegEx Exercise 3: Find All Numbers
 
-const REGEXP = /[+-]?([0-9]+[.])?[0-9]+/g
-let str = "-1.5 0 2 -123.4"
-console.log(str.match(REGEXP))
+// const REGEXP = /[+-]?([0-9]+[.])?[0-9]+/g
+// let str = "-1.5 0 2 -123.4"
+// console.log(str.match(REGEXP))
 
+// ###################################################
+// 4. RegEx Exercise 4: Insert After Head
+
+const REGEXP = /(?<=<body [^>].+?>)/
+let str = "\<html><body style='height: 200px'> ... </body></html>"
+str = str.replace(REGEXP, `<h1>Hello</h1>`)
+console.log(str) 
+
+// console.log(str) ➞ <html> <body style="height: 200px"><h1>Hello</h1> ... </body> </html>
 
 
 

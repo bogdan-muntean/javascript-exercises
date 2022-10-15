@@ -24,7 +24,7 @@ Notes
 The solution is in the Resources tab.
 
 # ##################################################
-3.RegEx Exercise 3: Find All Numbers
+3. RegEx Exercise 3: Find All Numbers
 
 Write a RegExp that looks for all decimal numbers including integer ones, with the floating point and negative ones.
 
@@ -33,8 +33,17 @@ const REGEXP = /your regexp/g
 let str = "-1.5 0 2 -123.4."
 str.match(REGEXP)  ➞ -1.5, 0, 2, -123.4
 
-
 # ##################################################
+4. RegEx Exercise 4: Insert After Head
+
+Write a regular expression that inserts <h1>Hello</h1> immediately after the <body> tag. The tag may have attributes. 
+You only have to come up with the regular expression. The replace function is already done (see the Tests tab).
+
+Examples
+const REGEXP = /your regular expression/
+let str = "\<html><body style="height: 200px"> ... </body></html>"
+str = str.replace(REGEXP, `<h1>Hello</h1>`)
+console.log(str) ➞ <html> <body style="height: 200px"><h1>Hello</h1> ... </body> </html>
 # ##################################################
 # ##################################################
 # ##################################################
