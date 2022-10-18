@@ -26,15 +26,36 @@
 // 3. RegEx Exercise: An empty string
 
 // const REGEXP = /(?!=.*[\s\d\w])/g
-const REGEXP = /^\s*$/
-
-console.log(REGEXP.test("test")) 
-console.log(REGEXP.test("")) 
+// const REGEXP = /^\s*$/
+// 
+// console.log(REGEXP.test("test")) 
+// console.log(REGEXP.test("")) 
 
 // REGEXP.test("") ➞ true
 
-
 //   ----------------------------------------
+// 4. Tile Teamwork Tactics
+// dice  1-6 possible of advance positions
+// position player 1 and 2  a and b 
+
+function possibleBonus(a, b){
+    if(b-a >= 1 && b-a <= 6 && a > 0 && b > 0){
+        return true;
+    } else if(a === b || b > a){
+        return false
+    } else {
+        return false;
+    }
+}
+
+console.log(possibleBonus(3, 7)) 
+console.log(possibleBonus(1, 9)) 
+console.log(possibleBonus(5, 3)) 
+
+// possibleBonus(3, 7) ➞ true
+// possibleBonus(1, 9) ➞ false
+// possibleBonus(5, 3) ➞ false
+
 //   ----------------------------------------
 //   ----------------------------------------
 //   ----------------------------------------
