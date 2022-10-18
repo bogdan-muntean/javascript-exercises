@@ -25,17 +25,30 @@
 // ###################################################
 // 4. RegEx Exercise 4: Insert After Head
 
-const REGEXP = /(?<=<body [^>].+?>)/
-let str = "\<html><body style='height: 200px'> ... </body></html>"
-str = str.replace(REGEXP, `<h1>Hello</h1>`)
-console.log(str) 
+// const REGEXP = /(?<=<body [^>].+?>)/
+// let str = "\<html><body style='height: 200px'> ... </body></html>"
+// str = str.replace(REGEXP, `<h1>Hello</h1>`)
+// console.log(str) 
 
 // console.log(str) ➞ <html> <body style="height: 200px"><h1>Hello</h1> ... </body> </html>
 
 // ###################################################
 // 5. RegEx Exercise 5: Password Validation
 
+// const REGEXP = /\w+d+(\W|_)+/g
+// const REGEXP = /^[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]/g
+const REGEXP = /(?=.*\d)(?=.*[a-zA-Z])(?=.*[$@*&^%!#*?|])/g
 
+console.log(REGEXP.test("bbA234c@cy~!"))
+console.log(REGEXP.test("32Bl4###xxz"))
+console.log(REGEXP.test("!abcABC9lzD"))
+console.log(REGEXP.test("d@!2?%^&ahaZbb"))
+
+
+// REGEXP.test("bbA234c@cy~!")  ➞ true
+// REGEXP.test("32Bl4###xxz") ➞ true
+// REGEXP.test("!abcABC9lzD") ➞ true
+// REGEXP.test("d@!2?%^&ahaZbb") ➞ true
 // ###################################################
 // ###################################################
 // ###################################################
