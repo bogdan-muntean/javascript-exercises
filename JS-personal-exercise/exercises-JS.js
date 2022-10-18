@@ -58,6 +58,6 @@
 
 //5.Sorteaza in ordinea lungimii stringurilor 
 
-const arrayOfCompanies = ["Luxoft","MutualMass" ,"Microsoft" ,"Brainest"]
-
-console.log(arrayOfCompanies.sort((a, b) => a.length - b.length))
+// const arrayOfCompanies = ["Luxoft","MutualMass" ,"Microsoft" ,"Brainest"]
+// 
+// console.log(arrayOfCompanies.sort((a, b) => a.length - b.length))
