@@ -60,20 +60,20 @@
 // 5. Right Shift by Division
 // The right shift operation is similar to floor division by powers of two.
 // Sample calculation using the right shift operator ( >> ):
-function shiftToRight(a, b){
-    let finalResultB = 1;
-    for(let i = 1; i <= b; i++){
-        finalResultB = finalResultB*2;
-    }
-    return Math.floor(a/finalResultB);
-}
+// function shiftToRight(a, b){
+//     let finalResultB = 1;
+//     for(let i = 1; i <= b; i++){
+//         finalResultB = finalResultB*2;
+//     }
+//     return Math.floor(a/finalResultB);
+// }
 
-console.log(shiftToRight(80, 3))
-console.log(shiftToRight(-24, 2))
-console.log(shiftToRight(-5, 1))
-console.log(shiftToRight(4666, 6))
-console.log(shiftToRight(3777, 6))
-console.log(shiftToRight(-512, 10))
+// console.log(shiftToRight(80, 3))
+// console.log(shiftToRight(-24, 2))
+// console.log(shiftToRight(-5, 1))
+// console.log(shiftToRight(4666, 6))
+// console.log(shiftToRight(3777, 6))
+// console.log(shiftToRight(-512, 10))
 
 // shiftToRight(80, 3) ➞ 10
 // shiftToRight(-24, 2) ➞ -6
@@ -81,7 +81,28 @@ console.log(shiftToRight(-512, 10))
 // shiftToRight(4666, 6) ➞ 72
 // shiftToRight(3777, 6) ➞ 59
 // shiftToRight(-512, 10) ➞ -1
+
 //   ----------------------------------------
+// 6. Perimeters with a Catch
+// Perimeter of a square: 4 * side.
+// Perimeter of a circle: 6.28 * radius.  (2 * pi * radius)
+
+function perimeter(type, value){
+    if(type === "s"){
+        return 4 * value
+    } else if(type === "c"){
+        return 6.28 * value
+    }
+}
+
+console.log(perimeter("s", 7)) 
+console.log(perimeter("c", 4)) 
+console.log(perimeter("c", 9)) 
+
+// perimeter("s", 7) ➞ 28
+// perimeter("c", 4) ➞ 25.12
+// perimeter("c", 9) ➞ 56.52
+
 //   ----------------------------------------
 //   ----------------------------------------
 //   ----------------------------------------
