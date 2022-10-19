@@ -107,25 +107,49 @@
 // 7. Find Number of Digits in Number
 // Examples
 
-function num_of_digits(number){
-    let lengthOfNumber = 0
-    if(number === 0){
-        return 1;
-    }
-    for(let i = number; i >= 1; i = i/10){
-        lengthOfNumber++
-    }
-    return lengthOfNumber
-}
+// function num_of_digits(number){
+    // let lengthOfNumber = 0
+    // if(number === 0){
+        // return 1;
+    // }
+    // for(let i = number; i >= 1; i = i/10){
+        // lengthOfNumber++
+    // }
+    // return lengthOfNumber
+// }
 
-console.log(num_of_digits(1000))
-console.log(num_of_digits(12))
-console.log(num_of_digits(1305981031))
-console.log(num_of_digits(0))
+// console.log(num_of_digits(1000))
+// console.log(num_of_digits(12))
+// console.log(num_of_digits(1305981031))
+// console.log(num_of_digits(0))
 
 // num_of_digits(1000) ➞ 4
 // num_of_digits(12) ➞ 2
 // num_of_digits(1305981031) ➞ 10
 // num_of_digits(0) ➞ 1
+
+//   ----------------------------------------
+// 8. Burglary Series (04): Add its Name
+
+function addName(object, a, b){
+    let ourObject = object;
+    let nameProperty = `${a}`;
+    ourObject[nameProperty] = b;
+    return ourObject
+}
+
+console.log(addName({}, "Brutus", 300)) 
+console.log(addName({ piano: 500 }, "Brutus", 400)) 
+console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440)) 
+
+
+// Examples
+// addName({}, "Brutus", 300)                            ➞ { Brutus: 300 }
+// addName({ piano: 500 }, "Brutus", 400)                ➞ { piano: 500, Brutus: 400 }
+// addName({ piano: 500, stereo: 300 }, "Caligula", 440) ➞ { piano: 500, stereo: 300, Caligula: 440 }
+//   ----------------------------------------
+//   ----------------------------------------
+//   ----------------------------------------
+//   ----------------------------------------
 //   ----------------------------------------
 //   ----------------------------------------

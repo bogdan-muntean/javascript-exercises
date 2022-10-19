@@ -1,6 +1,9 @@
-console.log(shiftToRight(80, 3))
-// console.log(shiftToRight(-24, 2))
-// console.log(shiftToRight(-5, 1))
-// console.log(shiftToRight(4666, 6))
-// console.log(shiftToRight(3777, 6))
-// console.log(shiftToRight(-512, 10))
+// perimeter("c", 4) ➞ 25.12
+// perimeter("c", 9) ➞ 56.52
+
+//   ----------------------------------------
+// 7. Find Number of Digits in Number
+// Examples
+
+// function num_of_digits(number){
+    // let lengthOfNumber = 0
