@@ -87,22 +87,45 @@
 // Perimeter of a square: 4 * side.
 // Perimeter of a circle: 6.28 * radius.  (2 * pi * radius)
 
-function perimeter(type, value){
-    if(type === "s"){
-        return 4 * value
-    } else if(type === "c"){
-        return 6.28 * value
-    }
-}
-
-console.log(perimeter("s", 7)) 
-console.log(perimeter("c", 4)) 
-console.log(perimeter("c", 9)) 
+// function perimeter(type, value){
+    // if(type === "s"){
+        // return 4 * value
+    // } else if(type === "c"){
+        // return 6.28 * value
+    // }
+// }
+// 
+// console.log(perimeter("s", 7)) 
+// console.log(perimeter("c", 4)) 
+// console.log(perimeter("c", 9)) 
 
 // perimeter("s", 7) ➞ 28
 // perimeter("c", 4) ➞ 25.12
 // perimeter("c", 9) ➞ 56.52
 
 //   ----------------------------------------
+// 7. Find Number of Digits in Number
+// Examples
+
+function num_of_digits(number){
+    let lengthOfNumber = 0
+    if(number === 0){
+        return 1;
+    }
+    for(let i = number; i >= 1; i = i/10){
+        lengthOfNumber++
+    }
+    return lengthOfNumber
+}
+
+console.log(num_of_digits(1000))
+console.log(num_of_digits(12))
+console.log(num_of_digits(1305981031))
+console.log(num_of_digits(0))
+
+// num_of_digits(1000) ➞ 4
+// num_of_digits(12) ➞ 2
+// num_of_digits(1305981031) ➞ 10
+// num_of_digits(0) ➞ 1
 //   ----------------------------------------
 //   ----------------------------------------
