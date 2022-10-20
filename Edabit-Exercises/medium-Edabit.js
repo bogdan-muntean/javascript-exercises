@@ -154,22 +154,49 @@
 // f(x) = x^b   x=m
 // ex: f(-2) = 3*x^(3-2) = 3*(-2)^2
 
-function derivative(b, m){
-    let powerOf = Math.pow(m, b-1)
-    return b * powerOf;
-}
+// function derivative(b, m){
+    // let powerOf = Math.pow(m, b-1)
+    // return b * powerOf;
+// }
 
-console.log(derivative(1, 4))
-console.log(derivative(3, -2)) 
-console.log(derivative(4, -3)) 
+// console.log(derivative(1, 4))
+// console.log(derivative(3, -2)) 
+// console.log(derivative(4, -3)) 
 
 // Examples
 // derivative(1, 4) ➞ 1
 // derivative(3, -2) ➞ 12
 // derivative(4, -3) ➞ -108
 
-
 //   ----------------------------------------
+// 10. Which Generation Are You? 
+let arrayFemale = ["great grandmother", "grandmother", "mother", "me!", "daughter", "granddaughter", "great granddaughter"];
+let arrayMale = ["great grandfather", "grandfather", "father", "me!", "son", "grandson", "great grandson"];
+function generation (number, gender){
+    let position = number + 3
+    if(gender === "f"){
+        return arrayFemale[position]
+    } else if(gender === "m"){
+        return arrayMale[position]
+    }
+}
+
+console.log(generation(2, "f"))
+console.log(generation(-3, "m"))
+console.log(generation(1, "f"))
+
+// -3	great grandfather	great grandmother
+// -2	grandfather	grandmother
+// -1	father	mother
+// 0	me!	me!
+// 1	son	daughter
+// 2	grandson	granddaughter
+// 3	great grandson	great granddaughter
+
+// Examples
+// generation(2, "f") ➞ "granddaughter"
+// generation(-3, "m") ➞ "great grandfather"
+// generation(1, "f") ➞ "daughter"
 //   ----------------------------------------
 //   ----------------------------------------
 //   ----------------------------------------
