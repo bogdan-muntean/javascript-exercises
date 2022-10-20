@@ -131,23 +131,44 @@
 //   ----------------------------------------
 // 8. Burglary Series (04): Add its Name
 
-function addName(object, a, b){
-    let ourObject = object;
-    let nameProperty = `${a}`;
-    ourObject[nameProperty] = b;
-    return ourObject
-}
-
-console.log(addName({}, "Brutus", 300)) 
-console.log(addName({ piano: 500 }, "Brutus", 400)) 
-console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440)) 
+// function addName(object, a, b){
+    // let ourObject = object;
+    // let nameProperty = `${a}`;
+    // ourObject[nameProperty] = b;
+    // return ourObject
+// }
+// 
+// console.log(addName({}, "Brutus", 300)) 
+// console.log(addName({ piano: 500 }, "Brutus", 400)) 
+// console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440)) 
 
 
 // Examples
 // addName({}, "Brutus", 300)                            ➞ { Brutus: 300 }
 // addName({ piano: 500 }, "Brutus", 400)                ➞ { piano: 500, Brutus: 400 }
 // addName({ piano: 500, stereo: 300 }, "Caligula", 440) ➞ { piano: 500, stereo: 300, Caligula: 440 }
+
 //   ----------------------------------------
+// 9. Derivative of a Function
+// Create a function that takes numbers b and m as arguments and returns the derivative of the function f(x)=x^b with respect to x evaluated at x=m, where b and m are constants.
+// f(x) = x^b   x=m
+// ex: f(-2) = 3*x^(3-2) = 3*(-2)^2
+
+function derivative(b, m){
+    let powerOf = Math.pow(m, b-1)
+    return b * powerOf;
+}
+
+console.log(derivative(1, 4))
+console.log(derivative(3, -2)) 
+console.log(derivative(4, -3)) 
+
+// Examples
+// derivative(1, 4) ➞ 1
+// derivative(3, -2) ➞ 12
+// derivative(4, -3) ➞ -108
+
+
 //   ----------------------------------------
 //   ----------------------------------------
 //   ----------------------------------------
