@@ -61,3 +61,20 @@
 // const arrayOfCompanies = ["Luxoft","MutualMass" ,"Microsoft" ,"Brainest"]
 // 
 // console.log(arrayOfCompanies.sort((a, b) => a.length - b.length))
+
+
+//6. Write a function called same, which accepts two arrays. The function should return true if every value in the 
+//array has it's corresponding value squared in the second array. The frequency of values must be the same.
+// same([1,2,3], [4,1,9]) // true
+// same([1,2,3], [1,9]) // false
+// same([1,2,1], [4,4,1]) // false (must be same frequency)
+
+function same (arr1, arr2) {
+    //1.cum descriu problema cu cuvintele proprii
+    //'verificarea frecventei pentru patratul elementelor'
+    //2.Putem introduce arr de numere
+    //3.Afisam boolean, are aceeasi frecventa sau nu
+    //4.pot determina ce se va afisa, cu ajutorul input-ului? Da
+    //5.Cum denumesc importante parti de code din problema?
+    //un obiect 'de comparat', in care fiecare element din arr1 va fi patratul lui arr1[x] de pe acea pozitie
+}
