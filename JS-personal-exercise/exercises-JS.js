@@ -69,7 +69,7 @@
 // same([1,2,3], [1,9]) // false
 // same([1,2,1], [4,4,1]) // false (must be same frequency)
 
-function same (arr1, arr2) {
+function same (arr, test) {
     //1.cum descriu problema cu cuvintele proprii
     //'verificarea frecventei pentru patratul elementelor'
     //2.Putem introduce arr de numere
@@ -77,4 +77,20 @@ function same (arr1, arr2) {
     //4.pot determina ce se va afisa, cu ajutorul input-ului? Da
     //5.Cum denumesc importante parti de code din problema?
     //un obiect 'de comparat', in care fiecare element din arr1 va fi patratul lui arr1[x] de pe acea pozitie
+    let counter = {}
+    let testObject = {}
+    for(let i = 0; i < arr.length; i++){
+        let patratul = arr[i] * arr[i];
+        counter[patratul] > 0 ? ++counter[patratul] : counter[patratul] = 1;
+    }
+    for(let i = 0; i < test.length; i++){
+        testObject[test[i]] ? ++testObject[test[i]] : testObject[test[i]] = 1;
+    }
+    console.log(counter, testObject)
+    if(counter.value === testObject.value){
+        return true;
+    } else {
+        return false;
+    }
 }
+console.log(same([3,7,5], [9, 49, 25]))
