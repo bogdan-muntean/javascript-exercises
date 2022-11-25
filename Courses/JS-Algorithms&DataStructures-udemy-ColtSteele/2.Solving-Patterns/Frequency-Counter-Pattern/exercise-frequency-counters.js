@@ -29,8 +29,7 @@ function same (arr, test) {
             counter[element]--;
         }
     }
-    return true;
-    
+    return true;   
 }
 console.log(same([3,7,5], [9, 49, 25]))
 console.log(same([3,7,5], [2, 3, 10]))
