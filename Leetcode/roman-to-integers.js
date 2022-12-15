@@ -13,10 +13,8 @@ function romanToInt(roman){
 
         pointerPreviosCharValue = actualRomanCharValue;
     }
-
     return suma;
 }
-
 console.log(romanToInt("III"))
 console.log(romanToInt("MCMXCIV"))
 
