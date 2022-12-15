@@ -114,7 +114,23 @@ console.log("####################")
 // Sample Data: [6,4,0, 3,-2,1]
 // Expected Output : [-2, 0, 1, 3, 4, 6]
 
-
-
-console.log("resultEx4V1: ", resultEx4V1)
+const bubbleEx6 = [6,4,0, 3,-2,1];
+const resultEx6V1 = bubbleEx6;
+let sorts = false;
+for(let i = 0; i < resultEx6V1.length; i++){
+    let valueToCompare = resultEx6V1[i]
+    if(valueToCompare > resultEx6V1[i+1]){
+        resultEx6V1[i] = resultEx6V1[i+1]
+        resultEx6V1[i+1] = valueToCompare
+        sorts = true;
+        // console.log(`pasul ${i} `, resultEx6V1)
+    } 
+    if(i === (resultEx6V1.length - 2) && sorts === false){
+        break;
+    } else if(i === (resultEx6V1.length - 2) && sorts === true){
+        i = -1;
+        sorts = false
+    }
+}
+console.log("resultEx6V1: ", resultEx6V1)
 console.log("####################")

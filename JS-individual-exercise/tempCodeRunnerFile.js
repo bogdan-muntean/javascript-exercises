@@ -1,1 +1,1 @@
-this.details.radius ^ 2
+bubbleEx6.length - 2
