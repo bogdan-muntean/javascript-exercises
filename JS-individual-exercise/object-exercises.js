@@ -133,4 +133,35 @@ for(let i = 0; i < resultEx6V1.length; i++){
     }
 }
 console.log("resultEx6V1: ", resultEx6V1)
+
+const resultEx6V2 = bubbleEx6;
+function bubbleSort(array){
+    for(let i = 0; i < array.length; i++){          //cand i creste, restrangem aria lui de cautare 
+        //pentru ca dupa fiecare pas, noi stim ca ultimul numar este cu siguramnta cel mai mare (s-a facut bubble up)
+        for(let j = 0; j < (array.length - 1 - i); j++){ //j face bubble up (duce la final, cel mai mare numar)
+            if(array[j] > array[j+1]){                   //finalul restrangandu-se, dupa fiecare pas 
+                let valoareTemporala = array[j];
+                array[j] = array[j+1]
+                array[j+1] = valoareTemporala
+            }                                             
+        }
+    } 
+    return array
+}
+console.log("resultEx6V2 - bubbleV1: ", bubbleSort(resultEx6V2))
+
+function bubbleSortV2(array){
+    for(let i = 0; i < array.length - 1; i++){   
+        for(let j = 0; j < (array.length - 1); j++){
+            if(array[j] > array[j+1]){                   
+                let valoareTemporala = array[j];
+                array[j] = array[j+1]
+                array[j+1] = valoareTemporala
+            } 
+        }
+    }
+    return array
+}
+console.log("resultEx6V2 - bubbleV2: ", bubbleSortV2(resultEx6V2))
+
 console.log("####################")
