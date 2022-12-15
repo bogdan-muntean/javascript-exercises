@@ -1,0 +1,1 @@
+this.details.radius ^ 2
